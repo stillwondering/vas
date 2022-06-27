@@ -18,6 +18,8 @@ defmodule VASWeb.Router do
     pipe_through :browser
 
     get "/", PageController, :index
+
+    resources "/members", MemberController
   end
 
   # Other scopes may use custom stacks.

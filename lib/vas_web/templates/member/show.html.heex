@@ -1,0 +1,48 @@
+<h1>Show Member</h1>
+
+<ul>
+
+  <li>
+    <strong>First name:</strong>
+    <%= @member.first_name %>
+  </li>
+
+  <li>
+    <strong>Last name:</strong>
+    <%= @member.last_name %>
+  </li>
+
+  <li>
+    <strong>Date of birth:</strong>
+    <%= @member.date_of_birth %>
+  </li>
+
+  <li>
+    <strong>Email:</strong>
+    <%= @member.email %>
+  </li>
+
+  <li>
+    <strong>Mobile:</strong>
+    <%= @member.mobile %>
+  </li>
+
+  <li>
+    <strong>Street:</strong>
+    <%= @member.street %>
+  </li>
+
+  <li>
+    <strong>Zip code:</strong>
+    <%= @member.zip_code %>
+  </li>
+
+  <li>
+    <strong>City:</strong>
+    <%= @member.city %>
+  </li>
+
+</ul>
+
+<span><%= link "Edit", to: Routes.member_path(@conn, :edit, @member) %></span> |
+<span><%= link "Back", to: Routes.member_path(@conn, :index) %></span>
